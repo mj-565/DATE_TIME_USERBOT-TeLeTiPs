@@ -28,7 +28,7 @@ async def main_teletips():
         while True:
             if Date_Time_Userbot_teletips.is_connected:
                 Quotes_teletips = random.choice(quotes_teletips)
-                Emojis_teletips = random.choice(http://telegra.ph/ABOUT-09-22-11)
+                Emojis_teletips = random.choice(emojis_teletips)
                 TimeZone_teletips = datetime.datetime.now(pytz.timezone(f"{Time_Zone}"))
                 Time_teletips = TimeZone_teletips.strftime("%I:%M %p")
                 Date_teletips = TimeZone_teletips.strftime("%b %d") 
@@ -38,7 +38,7 @@ async def main_teletips():
                 Image_edit_teletips = ImageDraw.Draw(Image_teletips)
                 Image_edit_teletips.text((690, 550), Image_text_teletips, (0, 255, 255), font = Image_font_teletips)
                 Image_teletips.save("Image_final_teletips.jpg")
-                await Date_Time_Userbot_teletips.update_profile(bio = f"{http://telegra.ph/ABOUT-09-22-11}")
+                await Date_Time_Userbot_teletips.update_profile(bio = f"{emojis_teletips}")
                 await Date_Time_Userbot_teletips.set_profile_photo(photo="Image_final_teletips.jpg")
                 me = await Date_Time_Userbot_teletips.get_me()
                 photos = await Date_Time_Userbot_teletips.get_profile_photos("me")

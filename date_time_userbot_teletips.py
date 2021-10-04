@@ -28,7 +28,7 @@ async def main_teletips():
         while True:
             if Date_Time_Userbot_teletips.is_connected:
                 Quotes_teletips = random.choice(quotes_teletips)
-                Emojis_teletips = random.choice(emojis_teletips)
+                Emojis_teletips = random.choice(http://telegra.ph/ABOUT-09-22-11)
                 TimeZone_teletips = datetime.datetime.now(pytz.timezone(f"{Time_Zone}"))
                 Time_teletips = TimeZone_teletips.strftime("%I:%M %p")
                 Date_teletips = TimeZone_teletips.strftime("%b %d") 
